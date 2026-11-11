@@ -51,7 +51,7 @@ a:hover { text-decoration: underline; }
 .bar {
   position: sticky; top: 0; z-index: 10;
   display: flex; align-items: center; justify-content: space-between; gap: 12px;
-  max-width: 980px; margin: 0 auto; padding: 12px 20px;
+  max-width: 860px; margin: 0 auto; padding: 12px 20px;
   background: color-mix(in srgb, var(--bg) 82%, transparent);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
@@ -69,7 +69,7 @@ a:hover { text-decoration: underline; }
 }
 .lang:hover { color: var(--text); }
 
-main { max-width: 980px; margin: 0 auto; padding: 0 20px 64px; }
+main { max-width: 860px; margin: 0 auto; padding: 0 20px 64px; }
 
 /* 一般文字頁（支援、隱私權） */
 .prose { max-width: 720px; }
@@ -105,7 +105,7 @@ main { max-width: 980px; margin: 0 auto; padding: 0 20px 64px; }
 .small { display: block; margin-top: 12px; color: var(--muted); font-size: 14px; }
 
 .features {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;
   margin: 48px 0 0; padding: 0; list-style: none;
 }
 .card {
@@ -151,11 +151,13 @@ main { max-width: 980px; margin: 0 auto; padding: 0 20px 64px; }
 .cf-turnstile { min-height: 65px; }
 
 .foot {
-  max-width: 980px; margin: 0 auto; padding: 24px 20px 40px;
+  max-width: 860px; margin: 0 auto; padding: 24px 20px 40px;
   border-top: 1px solid var(--line); color: var(--muted); font-size: 13px;
 }
 .foot p { margin: 4px 0; }
 .foot a { color: var(--muted); margin-right: 16px; }
+
+@media (max-width: 640px) { .features { grid-template-columns: 1fr; } }
 
 @media (max-width: 480px) {
   .bar nav { gap: 12px; }
