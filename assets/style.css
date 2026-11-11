@@ -130,7 +130,7 @@ main { max-width: 860px; margin: 0 auto; padding: 0 20px 64px; }
 
 /* 測試報名 */
 .join-hero { text-align: center; padding: 48px 0 8px; }
-.join-hero .icon { width: 88px; height: 88px; border-radius: 22.5%; box-shadow: 0 10px 32px rgba(204, 85, 134, .32); }
+.join-hero .icon { display: block; margin: 0 auto; width: 88px; height: 88px; border-radius: 22.5%; box-shadow: 0 10px 32px rgba(204, 85, 134, .32); }
 .eyebrow {
   display: inline-block; margin: 20px 0 0; padding: 4px 12px; border-radius: 999px;
   font-size: 13px; font-weight: 600; letter-spacing: .02em;
