@@ -4,9 +4,9 @@ title: 隱私權政策 Privacy Policy
 
 # 留影（Keepsake）隱私權政策
 
-最後更新：2026 年 11 月 10 日
+最後更新：2026 年 11 月 11 日
 
-留影不收集任何資料。我們沒有自己的伺服器，app 裡也沒有廣告、分析或追蹤工具，沒有帳號，不需要登入。
+留影 app 不收集任何資料。我們沒有自己的伺服器，app 裡也沒有廣告、分析或追蹤工具，沒有帳號，不需要登入。
 
 ## 你的照片
 - 留影需要你允許存取照片，才能找出相似的照片、建議要保留哪幾張。
@@ -19,6 +19,9 @@ title: 隱私權政策 Privacy Policy
 
 ## 地名
 「旅途」功能會用照片的位置，透過 Apple 的地名服務（Core Location）查出城市或地區名稱。查詢時，照片的大約座標會傳給 Apple，不會傳給我們。Apple 如何處理這些資料，請參考 Apple 的隱私權政策：https://www.apple.com/legal/privacy/
+
+## 測試報名 {#beta}
+在[測試報名頁](beta.html)留下的 email 和稱呼（選填），會透過 Cloudflare 直接轉給 Apple 的 TestFlight，由 Apple 寄出測試邀請。我們不另外保存，只會在 App Store Connect 的測試人員名單裡看到，用來寄測試邀請和測試相關的通知。報名頁使用 Cloudflare Turnstile 確認你不是機器人。想從名單移除，請寄信到 daniel2000890311g@gmail.com。
 
 ## 兒童
 留影不收集任何人的資料，包括兒童。
@@ -33,9 +36,9 @@ title: 隱私權政策 Privacy Policy
 
 # Keepsake Privacy Policy
 
-Last updated: November 10, 2026
+Last updated: November 11, 2026
 
-Keepsake doesn't collect any data. We don't run any servers, and the app has no ads, analytics, or tracking, no accounts, and no sign-in.
+The Keepsake app doesn't collect any data. We don't run any servers, and the app has no ads, analytics, or tracking, no accounts, and no sign-in.
 
 ## Your photos
 - Keepsake asks for access to your photos so it can find similar shots and suggest which ones to keep.
@@ -48,6 +51,9 @@ To open faster next time, Keepsake keeps on your device: analysis results (such 
 
 ## Place names
 The Trips feature uses your photos' locations to look up city or region names through Apple's location service (Core Location). When it does, the approximate coordinates are sent to Apple, not to us. See Apple's Privacy Policy for how Apple handles this data: https://www.apple.com/legal/privacy/
+
+## Beta sign-up {#beta-signup}
+The email and optional name you enter on the [beta sign-up page](beta.html) are passed through Cloudflare directly to Apple's TestFlight, which sends you the invitation. We don't store them anywhere else; we only see them in the tester list in App Store Connect, and use them for beta invitations and beta-related notices. The sign-up page uses Cloudflare Turnstile to check that you're not a bot. To be removed from the list, email daniel2000890311g@gmail.com.
 
 ## Children
 Keepsake doesn't collect data from anyone, including children.

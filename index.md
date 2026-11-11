@@ -8,5 +8,6 @@ title: 留影 Keepsake
 
 Find photos of the same scene and keep only the ones you want. Everything is analyzed on your iPhone.
 
+- [加入測試 Join the Beta](beta.html)
 - [支援 Support](support.html)
 - [隱私權政策 Privacy Policy](privacy.html)

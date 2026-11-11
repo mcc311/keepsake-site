@@ -1,0 +1,46 @@
+---
+title: 加入測試 Join the Beta
+---
+<h1>加入留影測試</h1>
+<p>留影（Keepsake）會找出同一個景拍的照片，讓你只挑要留的。所有分析都在你的 iPhone 上進行。</p>
+<p>留下 email，Apple 會寄 TestFlight 邀請信給你。需要 iOS 17 以上的 iPhone 或 iPad。</p>
+<p lang="en">Leave your email and Apple will send you a TestFlight invitation. Requires iPhone or iPad on iOS 17 or later.</p>
+
+<form id="join">
+  <p><label>Email<br><input type="email" name="email" required autocomplete="email" maxlength="254" style="width:100%;max-width:22em;font-size:1rem;padding:.4em"></label></p>
+  <p><label>怎麼稱呼你（選填）Name (optional)<br><input type="text" name="name" autocomplete="given-name" maxlength="60" style="width:100%;max-width:22em;font-size:1rem;padding:.4em"></label></p>
+  <div class="cf-turnstile" data-sitekey="0x4AAAAAAF8jnw7gTn-JpxrR"></div>
+  <p><button type="submit" style="font-size:1rem;padding:.5em 1.2em">寄邀請給我 Send me an invite</button></p>
+  <p id="status" role="status"></p>
+</form>
+
+<p><small>你的 email 只用來寄測試邀請和測試相關的通知，詳見<a href="privacy.html#beta">隱私權政策</a>。<br lang="en">Your email is only used for beta invitations and beta-related notices. See the <a href="privacy.html#beta-signup">Privacy Policy</a>.</small></p>
+
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<script>
+const form = document.getElementById("join"), status = document.getElementById("status");
+form.addEventListener("submit", async e => {
+  e.preventDefault();
+  const data = new FormData(form), button = form.querySelector("button");
+  button.disabled = true;
+  status.textContent = "送出中… Sending…";
+  try {
+    const r = await fetch("https://join.mcc311.me/", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email: data.get("email"), name: data.get("name"), token: data.get("cf-turnstile-response") }),
+    });
+    const res = await r.json();
+    if (res.ok) {
+      form.innerHTML = "<p><strong>好了！</strong>請到信箱收 Apple 寄的 TestFlight 邀請信（寄件人 TestFlight，可能要等幾分鐘，也看一下垃圾信件匣）。<br>Done! Check your inbox for the TestFlight invitation from Apple (it may take a few minutes; check spam too).</p>";
+      return;
+    }
+    status.textContent = { email: "Email 格式不對。 That email doesn't look right.", captcha: "驗證沒過，請再試一次。 Verification failed, please try again." }[res.error]
+      ?? "出了點問題，請稍後再試。 Something went wrong, please try again later.";
+  } catch {
+    status.textContent = "連不上，請稍後再試。 Couldn't connect, please try again later.";
+  }
+  window.turnstile?.reset();
+  button.disabled = false;
+});
+</script>
