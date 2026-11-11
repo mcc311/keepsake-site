@@ -1,10 +1,12 @@
 ---
 title: 隱私權政策 Privacy Policy
 ---
+<div lang="zh-Hant" markdown="1">
 
 # 留影（Keepsake）隱私權政策
 
 最後更新：2026 年 11 月 11 日
+{: .meta}
 
 留影 app 不收集任何資料。我們沒有自己的伺服器，app 裡也沒有廣告、分析或追蹤工具，沒有帳號，不需要登入。
 
@@ -32,11 +34,13 @@ title: 隱私權政策 Privacy Policy
 ## 聯絡我們
 有任何問題，請寄信到 daniel2000890311g@gmail.com。
 
----
+</div>
+<div lang="en" markdown="1">
 
 # Keepsake Privacy Policy
 
 Last updated: November 11, 2026
+{: .meta}
 
 The Keepsake app doesn't collect any data. We don't run any servers, and the app has no ads, analytics, or tracking, no accounts, and no sign-in.
 
@@ -63,3 +67,5 @@ If this policy changes, we'll update the date on this page.
 
 ## Contact
 If you have any questions, email daniel2000890311g@gmail.com.
+
+</div>

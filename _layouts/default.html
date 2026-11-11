@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }} · {% endif %}留影 Keepsake</title>
+<meta name="description" content="留影會找出同一個景拍的照片，讓你只挑要留的。所有分析都在你的 iPhone 上進行。">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#fbf7f3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1b1416" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta property="og:title" content="留影 Keepsake">
+<meta property="og:description" content="同一個景，只留最好的那幾張。Keep the best of every scene.">
+<meta property="og:image" content="https://keepsake.mcc311.me/assets/icon-512.png">
+<link rel="stylesheet" href="/assets/style.css">
+<script>
+  // 中文或英文：記住上次的選擇，沒選過就看瀏覽器語言
+  (function () {
+    var saved = null;
+    try { saved = localStorage.getItem("lang"); } catch (e) {}
+    var lang = saved || (/^zh/i.test(navigator.language) ? "zh-Hant" : "en");
+    document.documentElement.lang = lang;
+  })();
+</script>
+</head>
+<body>
+<header class="bar">
+  <a class="brand" href="/">
+    <img src="/assets/apple-touch-icon.png" alt="" width="32" height="32">
+    <span><span lang="zh-Hant">留影</span><span lang="en">Keepsake</span></span>
+  </a>
+  <nav>
+    <a href="/beta.html"{% if page.url == "/beta.html" %} aria-current="page"{% endif %}><span lang="zh-Hant">加入測試</span><span lang="en">Beta</span></a>
+    <a href="/support.html"{% if page.url == "/support.html" %} aria-current="page"{% endif %}><span lang="zh-Hant">支援</span><span lang="en">Support</span></a>
+    <button class="lang" type="button" onclick="toggleLang()" aria-label="Switch language / 切換語言"><span lang="zh-Hant">EN</span><span lang="en">中文</span></button>
+  </nav>
+</header>
+
+<main class="{{ page.class | default: 'prose' }}">
+{{ content }}
+</main>
+
+<footer class="foot">
+  <p>
+    <a href="/beta.html"><span lang="zh-Hant">加入測試</span><span lang="en">Join the Beta</span></a>
+    <a href="/support.html"><span lang="zh-Hant">支援</span><span lang="en">Support</span></a>
+    <a href="/privacy.html"><span lang="zh-Hant">隱私權政策</span><span lang="en">Privacy Policy</span></a>
+  </p>
+  <p>© 2026 Chang Chih Meng</p>
+</footer>
+<script>
+  function toggleLang() {
+    var lang = document.documentElement.lang === "en" ? "zh-Hant" : "en";
+    document.documentElement.lang = lang;
+    try { localStorage.setItem("lang", lang); } catch (e) {}
+  }
+</script>
+</body>
+</html>
