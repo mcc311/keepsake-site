@@ -2,39 +2,105 @@
 title: 加入測試 Join the Beta
 class: join
 ---
-<div class="card">
-  <h1><span lang="zh-Hant">加入留影測試</span><span lang="en">Join the Keepsake Beta</span></h1>
+<section class="join-hero">
+  <img class="icon" src="/assets/icon-512.png" alt="" width="88" height="88">
+  <p class="eyebrow"><span lang="zh-Hant">公開測試・免費</span><span lang="en">Public beta · Free</span></p>
+  <h1><span lang="zh-Hant">搶先試用留影</span><span lang="en">Try Keepsake early</span></h1>
   <p class="lede">
-    <span lang="zh-Hant">留下 email，Apple 會寄 TestFlight 邀請信給你。需要 iOS 17 以上的 iPhone 或 iPad。</span>
-    <span lang="en">Leave your email and Apple will send you a TestFlight invitation. Requires iPhone or iPad on iOS 17 or later.</span>
+    <span lang="zh-Hant">同一個景拍了好幾張？留影幫你分好組，你只挑要留的。幫我們試試看，告訴我們哪裡好用、哪裡卡卡的。</span>
+    <span lang="en">Ten shots of the same view? Keepsake groups them so you only pick the keepers. Help us try it out and tell us what works and what doesn't.</span>
   </p>
+</section>
 
-  <form id="join">
-    <label>Email
-      <input type="email" name="email" required autocomplete="email" maxlength="254" placeholder="you@example.com">
-    </label>
-    <label><span><span lang="zh-Hant">怎麼稱呼你（選填）</span><span lang="en">Name (optional)</span></span>
-      <input type="text" name="name" autocomplete="given-name" maxlength="60">
-    </label>
-    <div class="cf-turnstile" data-sitekey="0x4AAAAAAF8jnw7gTn-JpxrR" data-theme="auto"></div>
-    <button class="button" type="submit"><span lang="zh-Hant">寄邀請給我</span><span lang="en">Send me an invite</span></button>
-    <p class="status" id="status" role="status"></p>
-  </form>
+<div class="join-grid">
+  <div class="join-info">
+    <ol class="steps">
+      <li>
+        <h3><span lang="zh-Hant">留下 email</span><span lang="en">Leave your email</span></h3>
+        <p><span lang="zh-Hant">填在旁邊的表單，按「寄邀請給我」。</span><span lang="en">Fill in the form and tap “Send me an invite.”</span></p>
+      </li>
+      <li>
+        <h3><span lang="zh-Hant">收 Apple 的邀請信</span><span lang="en">Get the invite from Apple</span></h3>
+        <p><span lang="zh-Hant">寄件人是 TestFlight，通常幾分鐘內就到。在 iPhone 上打開，按「View in TestFlight」。</span><span lang="en">It comes from TestFlight, usually within minutes. Open it on your iPhone and tap “View in TestFlight.”</span></p>
+      </li>
+      <li>
+        <h3><span lang="zh-Hant">安裝，開始整理</span><span lang="en">Install and start sorting</span></h3>
+        <p><span lang="zh-Hant">第一次會先請你裝 TestFlight（Apple 的測試 App），之後新版本會自動推給你。</span><span lang="en">You'll be asked to get TestFlight (Apple's beta app) first; new versions arrive automatically after that.</span></p>
+      </li>
+    </ol>
 
-  <div class="done" id="done" hidden>
-    <div class="check"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></div>
-    <h2><span lang="zh-Hant">好了！</span><span lang="en">You're in!</span></h2>
-    <p>
-      <span lang="zh-Hant">請到信箱收 Apple 寄的 TestFlight 邀請信，可能要等幾分鐘，也看一下垃圾信件匣。在 iPhone 上打開信、按「View in TestFlight」就能安裝。</span>
-      <span lang="en">Check your inbox for the TestFlight invitation from Apple. It may take a few minutes, so check spam too. Open it on your iPhone and tap “View in TestFlight” to install.</span>
-    </p>
+    <ul class="perks">
+      <li>
+        <span class="tick" aria-hidden="true"></span>
+        <span lang="zh-Hant"><strong>完全免費</strong>，測試期間所有功能都能用，沒有付費牆。</span>
+        <span lang="en"><strong>Completely free.</strong> Every feature is unlocked during the beta.</span>
+      </li>
+      <li>
+        <span class="tick" aria-hidden="true"></span>
+        <span lang="zh-Hant"><strong>照片不會上傳</strong>，所有分析都在你的 iPhone 上進行。</span>
+        <span lang="en"><strong>Nothing is uploaded.</strong> All analysis happens on your iPhone.</span>
+      </li>
+      <li>
+        <span class="tick" aria-hidden="true"></span>
+        <span lang="zh-Hant"><strong>回饋很簡單</strong>，在 app 裡截圖，就能直接寫幾句話傳給我們。</span>
+        <span lang="en"><strong>Easy feedback.</strong> Take a screenshot in the app and send us a note right away.</span>
+      </li>
+      <li>
+        <span class="tick" aria-hidden="true"></span>
+        <span lang="zh-Hant"><strong>隨時可以退出</strong>，在 TestFlight 裡按「停止測試」就好。</span>
+        <span lang="en"><strong>Leave anytime</strong> by tapping “Stop Testing” in TestFlight.</span>
+      </li>
+    </ul>
   </div>
 
-  <p class="fine">
-    <span lang="zh-Hant">你的 email 只用來寄測試邀請和測試相關的通知，詳見<a href="/privacy.html#beta">隱私權政策</a>。</span>
-    <span lang="en">Your email is only used for beta invitations and beta-related notices. See the <a href="/privacy.html#beta-signup">Privacy Policy</a>.</span>
-  </p>
+  <div class="card join-card">
+    <form id="join">
+      <h2><span lang="zh-Hant">寄測試邀請給我</span><span lang="en">Send me an invite</span></h2>
+      <label>Email
+        <input type="email" name="email" required autocomplete="email" maxlength="254" placeholder="you@example.com">
+      </label>
+      <label><span><span lang="zh-Hant">怎麼稱呼你（選填）</span><span lang="en">Name (optional)</span></span>
+        <input type="text" name="name" autocomplete="given-name" maxlength="60">
+      </label>
+      <div class="cf-turnstile" data-sitekey="0x4AAAAAAF8jnw7gTn-JpxrR" data-theme="auto"></div>
+      <button class="button" type="submit"><span lang="zh-Hant">寄邀請給我</span><span lang="en">Send me an invite</span></button>
+      <p class="status" id="status" role="status"></p>
+      <p class="fine">
+        <span lang="zh-Hant">需要 iOS 17 以上的 iPhone 或 iPad。email 只用來寄測試邀請和測試相關的通知，詳見<a href="/privacy.html#beta">隱私權政策</a>。</span>
+        <span lang="en">Requires iPhone or iPad on iOS 17 or later. Your email is only used for beta invitations and beta-related notices. See the <a href="/privacy.html#beta-signup">Privacy Policy</a>.</span>
+      </p>
+    </form>
+
+    <div class="done" id="done" hidden>
+      <div class="check"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></div>
+      <h2><span lang="zh-Hant">好了！</span><span lang="en">You're in!</span></h2>
+      <p>
+        <span lang="zh-Hant">請到信箱收 Apple 寄的 TestFlight 邀請信，可能要等幾分鐘，也看一下垃圾信件匣。在 iPhone 上打開信、按「View in TestFlight」就能安裝。</span>
+        <span lang="en">Check your inbox for the TestFlight invitation from Apple. It may take a few minutes, so check spam too. Open it on your iPhone and tap “View in TestFlight” to install.</span>
+      </p>
+    </div>
+  </div>
 </div>
+
+<section class="faq">
+  <h2><span lang="zh-Hant">常見問題</span><span lang="en">FAQ</span></h2>
+  <details>
+    <summary><span lang="zh-Hant">會不會不小心刪到我的照片？</span><span lang="en">Could it delete my photos by accident?</span></summary>
+    <p><span lang="zh-Hant">不會。留影不會自己刪任何照片，每次刪除都要你按下按鈕、再經過系統確認。刪掉的照片會先進「照片」App 的「最近刪除」，30 天內都能救回來。</span><span lang="en">No. Keepsake never deletes on its own: every deletion needs your tap plus a system confirmation, and deleted photos go to Recently Deleted in Photos, where you can recover them for 30 days.</span></p>
+  </details>
+  <details>
+    <summary><span lang="zh-Hant">TestFlight 是什麼？安全嗎？</span><span lang="en">What is TestFlight? Is it safe?</span></summary>
+    <p><span lang="zh-Hant">TestFlight 是 Apple 官方的測試平台，測試版一樣要經過 Apple 審核才能發出。測試版會在 90 天後過期，到時候會有新版本或正式版。</span><span lang="en">TestFlight is Apple's official beta platform, and beta builds are reviewed by Apple before they go out. Each build expires after 90 days, by which time there will be a newer one or the App Store release.</span></p>
+  </details>
+  <details>
+    <summary><span lang="zh-Hant">沒收到邀請信怎麼辦？</span><span lang="en">I didn't get the invite.</span></summary>
+    <p><span lang="zh-Hant">先看一下垃圾信件匣，寄件人是 TestFlight（no_reply@email.apple.com）。還是沒有的話，寄信到 daniel2000890311g@gmail.com，我們幫你處理。</span><span lang="en">Check your spam folder for mail from TestFlight (no_reply@email.apple.com). Still nothing? Email daniel2000890311g@gmail.com and we'll sort it out.</span></p>
+  </details>
+  <details>
+    <summary><span lang="zh-Hant">正式版會收費嗎？</span><span lang="en">Will the full version cost money?</span></summary>
+    <p><span lang="zh-Hant">價格還沒決定。測試期間完全免費，正式上架前我們會先通知你。</span><span lang="en">Pricing isn't decided yet. The beta is completely free, and we'll let you know before the App Store release.</span></p>
+  </details>
+</section>
 
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 <script>
