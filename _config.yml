@@ -1,2 +1,6 @@
 title: 留影 Keepsake
 lang: zh-Hant
+defaults:
+  - scope: { path: "" }
+    values: { layout: default }
+exclude: [README.md]
